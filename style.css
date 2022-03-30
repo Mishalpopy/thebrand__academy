@@ -1,0 +1,137 @@
+.navbar-area {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* .navbar-area {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: url(video.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  padding: 0 8%;
+} */
+
+/* video background */
+video::-webkit-media-controls {
+  display: none !important;
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+#background-video {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#background-video::-webkit-media-controls,
+#background-video::-webkit-media-controls-start-playback-button,
+#background-video::-webkit-media-controls-play-button,
+#background-video::-webkit-media-controls-panel,
+#background-video::-webkit-media-controls-container,
+#background-video::-webkit-media-controls-overlay-play-button,
+#background-video::-webkit-media-controls-enclosure {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0 !important;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+  font-family: mytwoFont;
+  src: url(MYRIADPRO-REGULAR.OTF);
+}
+/* page content */
+h1,
+h2 {
+  color: white;
+  font-family: Trebuchet MS;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-family: myFirstFont;
+  font-size: 6rem;
+  font-weight: 100;
+  margin-top: 40vh;
+}
+
+h2 {
+  font-size: 3rem;
+}
+span {
+  font-family: mytwoFont;
+}
+
+@media (max-width: 750px) {
+  #background-video {
+    height: 100%;
+    width: 100%;
+  }
+  .navbar-area {
+    height: 100%;
+    width: 100%;
+  }
+
+  h1 {
+    font-family: myFirstFont;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 40vh;
+  }
+  .myButton {
+    background-color: transparent;
+    border-radius: 28px;
+    border: 1px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 19px;
+    padding: 5px 23px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+  }
+  body {
+    background: url("TBA web2 (1).mp4") no-repeat;
+    background-size: cover;
+  }
+}
+.myButton {
+  background-color: transparent;
+  border-radius: 28px;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 24px;
+  padding: 10px 38px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #000000;
+}
+.myButton:hover {
+  background-color: transparent;
+  text-decoration: dashed;
+  color: #ffffff;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}

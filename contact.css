@@ -1,0 +1,112 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+.navbar-area {
+  margin-top: 6vh;
+}
+.navbar-area .logo-area {
+  width: 50%;
+  float: left;
+}
+.navbar-area .link-area {
+  width: 50%;
+  float: right;
+}
+.navbar-area .link-area ul {
+  list-style: none;
+}
+.navbar-area .link-area ul a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 27px;
+}
+.navbar-area .link-area ul a:hover {
+  text-decoration: none;
+  color: #000000;
+  font-size: 27px;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(MYRIADPRO-BOLD.OTF);
+}
+@font-face {
+  font-family: mytwoFont;
+  src: url(MYRIADPRO-REGULAR.OTF);
+}
+h1 {
+  font-family: myFirstFont;
+  font-size: 6rem;
+  font-weight: 100;
+  margin-top: 40vh;
+  color: black;
+}
+
+h2 {
+  color: black;
+  font-size: 3rem;
+}
+span {
+  font-family: mytwoFont;
+}
+
+.contact-content {
+  display: flex;
+  min-height: 68vh;
+  align-items: center;
+}
+.contact-content .phoneNumber {
+  padding-bottom: 30px;
+}
+.contact-content .phoneNumber a {
+  text-decoration: none;
+  line-height: 34px;
+  font-size: 33px;
+  color: #000000;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.contact-content .mailAddress a {
+  text-decoration: none;
+  font-size: 27px;
+  line-height: 34px;
+  color: #000000;
+  font-weight: 600;
+  line-height: 34px;
+  margin-top: 20px;
+}
+.contact-content .location-address {
+  padding-bottom: 30px;
+}
+.contact-content .location-address a {
+  text-decoration: none;
+  font-size: 23px;
+  line-height: 34px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.contact-content .location-address-2 a {
+  text-decoration: none;
+  font-size: 23px;
+  line-height: 34px;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.footer h1 {
+  font-size: 26px;
+  color: #999999;
+}
+
+@media (max-width: 750px) {
+  .contact-content .phoneNumber a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+}
